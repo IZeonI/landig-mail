@@ -7,22 +7,22 @@ export default function Navbar() {
       {/* Zona izquierda: Logo */}
       <div style={styles.left}>
         <Link href="/" style={styles.logo}>
-          MyLogo
+          <img src="/logo.png" alt="Logo" style={{ height: '60px' }} />
         </Link>
       </div>
 
       {/* Zona central: Links */}
       <nav style={styles.center}>
         <Link href="/" style={styles.link}>Home</Link>
-        <Link href="/about" style={styles.link}>About</Link>
-        <Link href="/shop" style={styles.link}>Shop</Link>
-        <Link href="/contact" style={styles.link}>Contact</Link>
+        <Link href="/" style={styles.link}>About</Link>
+        <Link href="/" style={styles.link}>Shop</Link>
+        <Link href="/" style={styles.link}>Contact</Link>
       </nav>
 
       {/* Zona derecha: Iconos */}
       <div style={styles.right}>
-        <Link href="/cart" style={styles.icon}><FaShoppingCart size={20} /></Link>
-        <Link href="/account" style={styles.icon}><FaUser size={20} /></Link>
+        <Link href="/" style={styles.icon}><FaShoppingCart size={20} /></Link>
+        <Link href="/" style={styles.icon}><FaUser size={20} /></Link>
       </div>
     </header>
   );

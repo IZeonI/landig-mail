@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Navbar from '../components/Navbar';
+import MainContent from '../components/MainContent';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +19,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main style={{ padding: '2rem' }}>
-        <h1>Landing page principal</h1>
-        {/* ...contenido... */}
-      </main>
+      <MainContent />
     </>
   );
 }
